@@ -1,0 +1,8 @@
+{
+  "required": "Dieses Feld ist erforderlich",
+  "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+  "password": {
+    "min": "Das Passwort muss mindestens {{min}} Zeichen lang sein",
+    "match": "Passwörter stimmen nicht überein"
+  }
+}
