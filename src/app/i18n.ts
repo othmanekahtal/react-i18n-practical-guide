@@ -14,15 +14,17 @@ import deAuth from "../locales/de/auth.json";
 import arCommon from "../locales/ar/common.json";
 import arValidation from "../locales/ar/validation.json";
 import arAuth from "../locales/ar/auth.json";
-
+const getStoredLanguage = () => {
+  const storedLanguage = localStorage.getItem("language");
+  return storedLanguage || navigator.language.split("-")[0];
+};
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     debug: true,
-    lng: "ar",
+    lng: getStoredLanguage(),
     fallbackLng: "en",
-
     // Define default namespace
     defaultNS: "common",
 
@@ -129,5 +131,9 @@ i18n
       },
     },
   });
+
+i18n.on("languageChanged", (lng) => {
+  localStorage.setItem("language", lng);
+});
 
 export default i18n;

@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 
 export default function DateFormats() {
   const { t, i18n } = useTranslation();
-  const isRTL = i18n.language === "ar";
-
+  const isDir = i18n.dir();
+  const lang = i18n.language;
   const currentDate = new Date();
   const examples = [
     { type: "short", value: currentDate },
@@ -15,7 +15,7 @@ export default function DateFormats() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div
-        dir={isRTL ? "rtl" : "ltr"}
+        dir={isDir}
         className="max-w-2xl w-full mx-auto p-8 bg-white rounded-xl shadow-lg"
       >
         <div className="mb-8 text-center">
@@ -39,12 +39,12 @@ export default function DateFormats() {
 
         <div className="mt-8 text-center">
           <button
-            onClick={() => i18n.changeLanguage(isRTL ? "en" : "ar")}
+            onClick={() => i18n.changeLanguage(lang == "ar" ? "en" : "ar")}
             className="px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg
                      hover:from-blue-700 hover:to-purple-700 transition-all duration-300
                      focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
-            Switch to {isRTL ? "English" : "Arabic"}
+            Switch to {lang == "ar" ? "English" : "Arabic"}
           </button>
         </div>
       </div>
