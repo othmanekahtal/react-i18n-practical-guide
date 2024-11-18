@@ -1,6 +1,5 @@
-import ItemsList from "../components/common/items-list";
-
+import DateFormats from "../components/common/date-formats";
 function App() {
-  return <ItemsList />;
+  return <DateFormats />;
 }
 export default App;
