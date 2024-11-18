@@ -15,6 +15,16 @@
     "title": "مثال الجمع",
     "currentLang": "اللغة الحالية"
   },
+
+  "showcase": {
+    "title": "عرض أمثلة i18n",
+    "nav": {
+      "numbers": "تنسيق الأرقام",
+      "dates": "تنسيق التواريخ",
+      "plurals": "قواعد الجمع"
+    }
+  },
+
   "numberExample": {
     "title": "أمثلة تنسيق الأرقام",
     "currency": "العملة: {{value, currency}}",

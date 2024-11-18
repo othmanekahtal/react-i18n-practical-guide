@@ -12,6 +12,14 @@
     "title": "Plural example",
     "currentLang": "current Language"
   },
+  "showcase": {
+    "title": "i18n Examples Showcase",
+    "nav": {
+      "numbers": "Number Formatting",
+      "dates": "Date Formatting",
+      "plurals": "Plural Rules"
+    }
+  },
   "numberExample": {
     "title": "Number Formatting Examples",
     "currency": "Currency: {{value, currency}}",

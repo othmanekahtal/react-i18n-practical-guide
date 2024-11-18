@@ -7,27 +7,23 @@ import enCommon from "../locales/en/common.json";
 import enValidation from "../locales/en/validation.json";
 import enAuth from "../locales/en/auth.json";
 
-import deCommon from "../locales/de/common.json";
-import deValidation from "../locales/de/validation.json";
-import deAuth from "../locales/de/auth.json";
-
 import arCommon from "../locales/ar/common.json";
 import arValidation from "../locales/ar/validation.json";
 import arAuth from "../locales/ar/auth.json";
-const getStoredLanguage = () => {
-  const storedLanguage = localStorage.getItem("language");
-  return storedLanguage || navigator.language.split("-")[0];
+const detectionOptions = {
+  order: ["localStorage", "navigator"],
+  lookupLocalStorage: "language",
+  caches: ["localStorage"],
 };
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     debug: true,
-    lng: getStoredLanguage(),
+    detection: detectionOptions,
     fallbackLng: "en",
     // Define default namespace
     defaultNS: "common",
-
     interpolation: {
       format: function (value, format, lng) {
         if (value instanceof Date) {
@@ -119,11 +115,6 @@ i18n
         validation: enValidation,
         auth: enAuth,
       },
-      de: {
-        common: deCommon,
-        validation: deValidation,
-        auth: deAuth,
-      },
       ar: {
         common: arCommon,
         validation: arValidation,
@@ -134,6 +125,10 @@ i18n
 
 i18n.on("languageChanged", (lng) => {
   localStorage.setItem("language", lng);
+  document.documentElement.lang = lng;
+  document.dir = i18n.dir(lng);
 });
 
+document.dir = i18n.dir(i18n.language);
+document.documentElement.lang = i18n.language;
 export default i18n;
