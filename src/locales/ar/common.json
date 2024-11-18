@@ -1,0 +1,27 @@
+{
+  "actions": {
+    "create": "إنشاء",
+    "delete": "حذف",
+    "cancel": "إلغاء",
+    "save": "حفظ"
+  },
+  "item_zero": "لا توجد عناصر",
+  "item_one": "عنصر واحد",
+  "item_two": "عنصران",
+  "item_few": "{{count}} عناصر",
+  "item_many": "{{count}} عنصراً",
+  "item_other": "{{count}} عنصر",
+  "pluralExample": {
+    "title": "مثال الجمع",
+    "currentLang": "اللغة الحالية"
+  },
+  "greeting": {
+    "title": "مرحبًا، {{name}}",
+    "subtitle": "مرحبًا بك في لوحة التحكم الخاصة بك"
+  },
+  "messages": {
+    "loading": "يرجى الانتظار...",
+    "success": "تمت العملية بنجاح",
+    "error": "حدث خطأ ما"
+  }
+}

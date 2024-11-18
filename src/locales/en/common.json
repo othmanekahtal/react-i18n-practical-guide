@@ -1,0 +1,24 @@
+{
+  "actions": {
+    "create": "Create",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "save": "Save"
+  },
+  "item_zero": "No items",
+  "item_one": "{{count}} item",
+  "item_other": "{{count}} items",
+  "pluralExample": {
+    "title": "Plural example",
+    "currentLang": "current Language"
+  },
+  "greeting": {
+    "title": "Hello, {{name}}",
+    "subtitle": "Welcome to your dashboard"
+  },
+  "messages": {
+    "loading": "Please wait...",
+    "success": "Operation completed successfully",
+    "error": "Something went wrong"
+  }
+}

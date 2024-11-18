@@ -5,6 +5,10 @@
     "cancel": "Abbrechen",
     "save": "Speichern"
   },
+  "greeting": {
+    "title": "Hallo, {{name}}",
+    "subtitle": "Willkommen in Ihrem Dashboard"
+  },
   "messages": {
     "loading": "Bitte warten...",
     "success": "Vorgang erfolgreich abgeschlossen",

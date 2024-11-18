@@ -1,6 +1,6 @@
-import LoginForm from "../components/auth/login/form";
+import ItemsList from "../components/common/items-list";
 
 function App() {
-  return <LoginForm />;
+  return <ItemsList />;
 }
 export default App;
