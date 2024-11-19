@@ -1,24 +1,20 @@
 import i18n, { FormatFunction } from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
-
-// Import namespaces for each language
-import enCommon from "../locales/en/common.json";
-import enValidation from "../locales/en/validation.json";
-import enAuth from "../locales/en/auth.json";
-
-import arCommon from "../locales/ar/common.json";
-import arValidation from "../locales/ar/validation.json";
-import arAuth from "../locales/ar/auth.json";
+import HttpBackend from "i18next-http-backend";
 const detectionOptions = {
   order: ["localStorage", "navigator"],
   lookupLocalStorage: "language",
   caches: ["localStorage"],
 };
 i18n
+  .use(HttpBackend)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    backend: {
+      loadPath: "/locales/{{lng}}/{{ns}}.json",
+    },
     debug: true,
     detection: detectionOptions,
     fallbackLng: "en",
@@ -108,18 +104,8 @@ i18n
 
       escapeValue: false, // not needed for react as it escapes by default
     },
-
-    resources: {
-      en: {
-        common: enCommon,
-        validation: enValidation,
-        auth: enAuth,
-      },
-      ar: {
-        common: arCommon,
-        validation: arValidation,
-        auth: arAuth,
-      },
+    react: {
+      useSuspense: false,
     },
   });
 
