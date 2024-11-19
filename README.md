@@ -37,7 +37,7 @@ Each feature is implemented in its own branch for easier learning:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/react-i18n-practical-guide.git
+git clone https://github.com/othmanekahtal/react-i18n-practical-guide.git
 ```
 
 2. Install dependencies:
