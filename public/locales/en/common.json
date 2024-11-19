@@ -1,0 +1,50 @@
+{
+  "actions": {
+    "create": "Create",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "save": "Save"
+  },
+  "item_zero": "No items",
+  "item_one": "{{count}} item",
+  "item_other": "{{count}} items",
+  "pluralExample": {
+    "title": "Plural example",
+    "currentLang": "current Language"
+  },
+  "showcase": {
+    "title": "i18n Examples Showcase",
+    "nav": {
+      "numbers": "Number Formatting",
+      "dates": "Date Formatting",
+      "plurals": "Plural Rules"
+    }
+  },
+  "numberExample": {
+    "title": "Number Formatting Examples",
+    "currency": "Currency: {{value, currency}}",
+    "decimal": "Decimal: {{value, decimal}}",
+    "percent": "Percentage: {{value, percent}}",
+    "compact": "Compact: {{value, compact}}",
+    "bytes": "Bytes: {{value, bytes}}",
+    "kg": "Weight: {{value, kg}}",
+    "meter": "Length: {{value, meter}}",
+    "temperature": "Temperature: {{value, temperature}}"
+  },
+  "dateExample": {
+    "title": "Date Formatting Examples",
+    "short": "Short: {{date, short}}",
+    "long": "Long: {{date, long}}",
+    "time": "Time: {{date, time}}",
+    "full": "Full: {{date, full}}"
+  },
+  "greeting": {
+    "title": "Hello, {{name}}",
+    "subtitle": "Welcome to your dashboard"
+  },
+  "messages": {
+    "loading": "Please wait...",
+    "success": "Operation completed successfully",
+    "error": "Something went wrong"
+  }
+}

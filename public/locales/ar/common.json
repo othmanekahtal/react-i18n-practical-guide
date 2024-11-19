@@ -1,0 +1,55 @@
+{
+  "actions": {
+    "create": "إنشاء",
+    "delete": "حذف",
+    "cancel": "إلغاء",
+    "save": "حفظ"
+  },
+  "item_zero": "لا توجد عناصر",
+  "item_one": "عنصر واحد",
+  "item_two": "عنصران",
+  "item_few": "{{count}} عناصر",
+  "item_many": "{{count}} عنصراً",
+  "item_other": "{{count}} عنصر",
+  "pluralExample": {
+    "title": "مثال الجمع",
+    "currentLang": "اللغة الحالية"
+  },
+
+  "showcase": {
+    "title": "عرض أمثلة i18n",
+    "nav": {
+      "numbers": "تنسيق الأرقام",
+      "dates": "تنسيق التواريخ",
+      "plurals": "قواعد الجمع"
+    }
+  },
+
+  "numberExample": {
+    "title": "أمثلة تنسيق الأرقام",
+    "currency": "العملة: {{value, currency}}",
+    "decimal": "العدد العشري: {{value, decimal}}",
+    "percent": "النسبة المئوية: {{value, percent}}",
+    "compact": "مختصر: {{value, compact}}",
+    "bytes": "الحجم: {{value, bytes}}",
+    "kg": "الوزن: {{value, kg}}",
+    "meter": "الطول: {{value, meter}}",
+    "temperature": "درجة الحرارة: {{value, temperature}}"
+  },
+  "dateExample": {
+    "title": "أمثلة تنسيق التاريخ",
+    "short": "مختصر: {{date, short}}",
+    "long": "طويل: {{date, long}}",
+    "time": "الوقت: {{date, time}}",
+    "full": "كامل: {{date, full}}"
+  },
+  "greeting": {
+    "title": "مرحبًا، {{name}}",
+    "subtitle": "مرحبًا بك في لوحة التحكم الخاصة بك"
+  },
+  "messages": {
+    "loading": "يرجى الانتظار...",
+    "success": "تمت العملية بنجاح",
+    "error": "حدث خطأ ما"
+  }
+}
